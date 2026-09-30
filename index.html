@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillNet - Institution Portal</title>
+  <meta name="description" content="SkillNet Enterprise Post-Login Institution Portal for student skill readiness, industry demand analytics, and corporate collaborations.">
+  
+  <!-- Fonts: Hanken Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols Outlined Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            // Brand & Primary
+            primary: {
+              DEFAULT: '#2563EB',
+              dark: '#1D4ED8',
+              light: '#3B82F6',
+              container: '#2563eb',
+              fixed: '#dbe1ff'
+            },
+            secondary: {
+              DEFAULT: '#00687A',
+              container: '#57DFFE',
+              fixed: '#acedff',
+              dim: '#4cd7f6'
+            },
+            accent: {
+              cyan: '#06B6D4',
+              sky: '#38BDF8',
+              blue: '#2563EB'
+            },
+            // Surfaces & Backgrounds
+            surface: {
+              DEFAULT: '#F8F9FF',
+              low: '#EFF4FF',
+              lowest: '#FFFFFF',
+              high: '#DCE9FF',
+              container: '#E6EEFF'
+            },
+            navy: {
+              950: '#0B132B',
+              900: '#0F172A',
+              800: '#1E293B',
+              700: '#334155',
+              head: '#0F172A'
+            },
+            'on-surface': '#0D1C2E',
+            'on-surface-variant': '#434655',
+            'outline-variant': '#C3C6D7',
+            'inverse-surface': '#233144'
+          },
+          fontFamily: {
+            display: ['Hanken Grotesk', 'sans-serif'],
+            headline: ['Hanken Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            code: ['JetBrains Mono', 'monospace']
+          },
+          boxShadow: {
+            'card': '0 1px 3px 0 rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.04)',
+            'card-hover': '0 10px 25px -5px rgba(37, 99, 235, 0.08), 0 8px 10px -6px rgba(37, 99, 235, 0.04)',
+            'glow-blue': '0 0 20px -5px rgba(37, 99, 235, 0.35)',
+            'glow-cyan': '0 0 20px -5px rgba(6, 182, 212, 0.35)'
+          }
+        }
+      }
+    };
+  </script>
+  
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body class="bg-[#F8F9FF] text-[#0D1C2E] font-body antialiased selection:bg-blue-500 selection:text-white">
+  <div id="app" class="min-h-screen flex flex-col"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
